@@ -1,0 +1,253 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Flexbox</title>
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Akronim&family=Roboto:ital,wght@0,100;0,400;1,700&display=swap" rel="stylesheet">
+
+	<!---Tag to check device size--->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	
+	
+	<style>
+				
+		body{
+			font-family: 'Roboto', sans-serif;
+			margin: 0;
+		}
+		header{
+			background-color: black;
+			background-image: url("images/moon.jpg");
+			background-size: cover;
+			background-attachment: fixed;
+			background-position: center;
+			color: orange;
+			height: 50vh;
+			/*this is flexbox element*/
+			display: flex;
+			align-items: center;
+			padding-left: 20px;<h1></h1>
+/*			justify-content: center;*/
+			
+		}
+		header h1{
+			font-size: 50px;
+			font-family: 'Akronim', cursive;
+		}
+		
+		.flex-container{
+			display: flex;
+			align-items: stretch;
+		}
+		
+		.flex-container div{
+			background-color: orange;
+			margin: 10px;
+			padding: 20px;
+			margin: 0;
+		}
+	
+		/*div widths*/
+		
+			#item1{
+			flex: 25%;
+		}
+		
+			#item1 img{
+			width: 100%;
+		}
+		
+			#item2{
+			flex: 50%;
+		}
+		
+			#item3{
+			flex: 25%;
+		}
+		
+		.btn{
+			background-color: black;
+			color: orange;
+			border: none;
+			padding: 15px 32px;
+			font-size: 15px;
+			width: 100%;
+		}
+		
+		.btn:hover{
+			background-color: white;
+			color: black;
+		}
+
+			#item4{
+			flex: 50%;
+		}
+	
+			#item5{
+			flex: 50%;
+		}
+		
+			#item5{
+			flex: 50%;
+		}
+		
+			#item6{
+			flex: 50%;
+		}
+		
+			#item7{
+			flex: 50%;
+		}
+		
+			#item7 img{
+			width: 100%;
+		}
+		
+			#item8{
+			flex: 50%;
+		}
+		
+			#item8 img{
+			width: 100%;
+		}
+		
+			#item9{
+			flex: 50%;
+		}
+		
+		
+		/*footer goes here*/
+		
+		
+			#item10{
+			flex: 25%;
+		/*over write*/
+			background: transparent;
+		}
+		
+			#item11{
+			flex: 50%;
+			background: transparent;
+		}
+	
+			#item12{
+			flex: 25%;
+		/*over write*/
+			background: transparent;
+		}
+				
+			footer{
+			background-color: #160102;
+			padding: 50px 0px;
+			color: orange;
+			text-align: center;
+		}
+		
+		/****media query to change style for phones****/
+		@media (max-width:800px){
+		
+          .flex-container {
+            flex-direction: column;
+          }
+        
+		
+	</style>
+</head>
+
+<body>
+	
+	<header>
+		
+		<h1>Happy Halloween!</h1>
+	</header>
+	
+	<div class="flex-container">
+		<div id="item1">
+			<img src="images/person.jpg" alt="creepy">
+		</div>
+		<div id="item2">
+		
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia explicabo est, obcaecati voluptatum earum dolor dolore saepe porro, voluptate quod quidem labore excepturi. Quaerat officia blanditiis autem id commodi, dicta quia error quae porro quidem ipsum omnis vero deserunt velit! Animi dolor minus, distinctio repellendus dignissimos porro consequatur facilis expedita culpa quia magnam tempore. Animi corrupti tempore excepturi illum nisi in incidunt ab atque eos obcaecati deleniti explicabo odio cumque, dolor nesciunt est? Odit consequatur, doloribus similique quam officiis, veritatis eveniet ea animi facere. Quisquam, fugiat, dolor! Consectetur optio, illo vel fugit? Voluptatum nostrum, esse eius? Itaque sunt corporis ullam.</p>
+			
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia explicabo est, obcaecati voluptatum earum dolor dolore saepe porro, voluptate quod quidem labore excepturi. Quaerat officia blanditiis autem id commodi, dicta quia error quae porro quidem ipsum omnis vero deserunt velit! Animi dolor minus, distinctio repellendus dignissimos porro consequatur facilis expedita culpa quia magnam tempore. Animi corrupti tempore excepturi illum nisi in incidunt ab atque eos obcaecati deleniti explicabo odio cumque, dolor nesciunt est? Odit consequatur, doloribus similique quam officiis, veritatis eveniet ea animi facere. Quisquam, fugiat, dolor! Consectetur optio, illo vel fugit? Voluptatum nostrum, esse eius? Itaque sunt corporis ullam.</p>
+		
+		</div>
+		<div id="item3">
+			<button class="btn">Click Here!</button><br>
+			<button class="btn">Click Here!</button>
+			
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia explicabo est, obcaecati voluptatum earum dolor dolore saepe porro, voluptate quod quidem labore excepturi. Quaerat officia blanditiis autem id commodi, dicta quia error quae porro quidem ipsum omnis vero deserunt velit! Animi dolor minus, distinctio repellendus dignissimos porro cons.</p>
+			
+			
+		</div>
+	</div> 
+	
+	
+	
+	<div class="flex-container">
+		<div id="item4">
+			
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia explicabo est, obcaecati voluptatum earum dolor dolore saepe porro, voluptate quod quidem labore excepturi. Quaerat officia blanditiis autem id commodi, dicta quia error quae porro quidem ipsum omnis vero deserunt velit! Animi dolor minus, distinctio repellendus dignissimos porro cons.</p>
+			
+		</div>
+		<div id="item5">
+		
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia explicabo est, obcaecati voluptatum earum dolor dolore saepe porro, voluptate quod quidem labore excepturi. Quaerat officia blanditiis autem id commodi, dicta quia error quae porro quidem ipsum omnis vero deserunt velit! Animi dolor minus, distinctio repellendus dignissimos porro consequatur facilis expedita culpa quia magnam tempore. Animi corrupti tempore excepturi illum nisi in incidunt ab atque eos obcaecati deleniti explicabo odio cumque.</p>
+		
+		</div>
+	</div>
+	
+		<div class="flex-container">
+			<div id="item6">
+				
+				<button class="btn">Click Here!</button><br>
+				<button class="btn">Click Here!</button>
+			
+				<ul>
+					<li>Something goes here</li>
+					<li>Something goes here</li>
+					<li>Something goes here</li>
+					<li>Something goes here</li>
+				</ul>
+					
+			</div>
+			
+			<div id="item7">
+			
+				<img src="images/pumpkin1.jpg" alt="pumpkin">
+			
+			</div>
+			
+			<div id="item8">
+			
+				<img src="images/pumpkin2.jpg" alt="pumpkin">
+			
+			</div>
+			
+			<div id="item9">
+			
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non obcaecati deleniti quod nulla nobis ipsa dolore culpa officia pariatur alias!</p>
+			
+			</div>
+		</div>
+	
+	
+	<footer>
+		<div class="flex-container">
+			<div id="item10"></div>
+			<div id="item11">
+			
+					<p>Created by: Claude S.</p>
+					<p>&copy; 2021</p>
+			</div>
+			<div id="item12"></div>
+		</div>
+	
+	</footer>
+	
+</body>
+</html>
