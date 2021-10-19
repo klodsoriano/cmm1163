@@ -1,0 +1,547 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Claude | Profile</title>
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Akronim&family=Roboto:ital,wght@0,100;0,400;1,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+
+
+	<!---Tag to check device size--->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	
+	<style>
+				
+		body{
+			font-family: 'Roboto', sans-serif;
+			margin: 0;
+			background-color: black;
+		}
+		header{
+			background-color: black;
+			background-image: url("images/header.png");
+			background-size: cover;
+			background-attachment: fixed;
+			background-position: right;
+			height: 70vh;
+			/*this is flexbox element*/
+			display: flex;
+			align-items: flex-end;	
+		}
+		
+		h1{
+			font-size: 130px;
+			font-family: 'Anton', sans-serif;
+			color: white;
+			margin-top: -80px;
+			margin-bottom: -30px;	
+		}
+		
+		h2{
+			font-size: 80px;
+			font-family: 'Anton', sans-serif;
+			color: white;
+		}
+		
+		header h4{
+			font-size: 20px;
+			font-family: 'Rampart One', cursive;
+		}
+		
+		
+		.flex-container{
+			display: flex;
+			align-items: stretch;
+		}
+		
+		.flex-container div{
+			background-color: black;
+			color: white;
+			margin: 0;
+		}
+	
+	/* unvisited link */
+			a:link {
+ 			color: red;
+		}
+
+	/* visited link */
+			a:visited {
+  			color: green;
+		}
+
+	/* mouse over link */
+			a:hover {
+  			color: hotpink;
+		}
+
+	/* selected link */
+			a:active {
+  			color: blue;
+		}
+		
+		
+		/*div widths*/
+		
+
+			#item1{
+			flex: 100%;
+			display: flex;
+ 			flex-direction: column;
+			color: white;
+			background-color: transparent;
+			padding-left: 50px;
+			padding-bottom: 20px;
+		}
+		
+			#item2{
+			flex: 20%;
+			font-size: 130px;
+			text-align: right;
+			background-color:#FFFFFF;
+			color: black;
+		}
+		
+			#item3{
+			flex: 50%;
+			background-color:#FFFFFF;
+			color: black;
+			padding: 50px;
+		}
+		
+			#item4{
+			flex: 10%;
+			background-color: #FFFFFF;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;		
+		}
+
+			#item5{
+			flex: 20%;
+			background-color:#FFFFFF;
+		}
+	
+			#item6{
+			flex: 100%;
+			display: flex;
+ 			flex-direction: column-reverse;
+			background-image: url("images/laptop.png");
+			background-size: cover;
+			background-attachment: fixed;
+			background-position: right;
+			height: 40vh;
+			align-items: center;
+			padding: 30px;
+		}
+				
+			#item6a{
+			flex: 20%;
+			background-color: transparent;
+		}
+			#item6b{
+			flex: 10%;
+			background-color: transparent;		
+		}
+		
+			#item6c{
+			flex: 60%;
+			background-color: transparent;
+			justify-content: center;
+  			align-self: center;
+		}
+		
+			#item6d{
+			flex: 10%;
+			background-color: transparent;		
+		}
+		
+			#item7{
+			flex: 25%;	
+		}
+		
+			#item7 img{
+			width: 100%;
+		}
+		
+			#item8{
+			flex: 25%;
+		}
+		
+			#item8 img{
+			width: 100%;
+			margin: 0;
+		}
+		
+			#item9{
+			flex: 25%;
+		}
+		
+			#item9 img{
+			width: 100%;
+		}
+		
+			#item10{
+			flex: 25%;
+		}
+		
+			#item10 img{
+			width: 100%;
+		}
+		
+			#item11{
+			flex: 20%;
+		}
+		
+			#item12{
+			flex: 40%;
+			padding: 30px;
+		}
+		
+			#item13{
+			flex: 10%;
+			justify-content: center;
+  			align-self: center;
+		}
+			
+			#item14{
+			flex: 30%;
+		}
+		
+			#item15{
+			flex: 100%;
+			display: flex;
+ 			flex-direction: row;
+			background-image: url("images/contact.png");
+			background-size: cover;
+			background-attachment: fixed;
+			background-position: center;
+			height: 50vh;		
+		}
+		
+			#item15a{
+			flex: 30%;
+			background-color: white;
+			opacity: 85%;
+			color: black;
+			padding: 30px;
+			justify-content: center;
+  			align-self: center;
+		}
+		
+			#item15b{
+			flex: 50%;
+			background-color: transparent;
+		}
+		
+			#item15c{
+			flex: 20%;
+			background-color: transparent;
+		}
+		
+			#item16{
+			flex: 80%;
+			padding: 50px;
+			justify-content: center;
+  			align-self: center;
+		}
+
+			#item17{
+			flex: 10%;
+			padding: 30px;
+			justify-content: center;
+  			align-self: center;
+		}
+		
+			#item18{
+			flex: 10%;
+		}
+		
+			#item19{
+			flex: 20%;
+			padding: 50px 0 0 30px;
+			background-color: #222222;
+			color: #C6C6C6;
+		}
+		
+		
+			#item20{
+			flex: 35%;
+			padding: 50px 50px 0 30px;
+			text-align: left;
+			background-color: #222222;
+			color: #C6C6C6;
+			
+		}
+		
+			#item21{
+			flex: 15%;
+			padding-top: 30px;
+			text-align: left;
+			background-color: #222222;
+			color: #C6C6C6;
+		}
+		
+			#item22{
+			flex: 15%;
+			padding-top: 30px;
+			text-align: left;
+			background-color: #222222;
+			color: #C6C6C6;
+		}
+		
+			#item23{
+			flex: 15%;
+			padding-top: 30px;
+			background-color: #222222;
+			color: #C6C6C6;
+		}
+		
+			#item24{
+			flex: 100%;
+			padding-top: 70px;
+			text-align: center;
+			background-color: #222222;
+			color: #C6C6C6;
+		}
+		
+	
+		/*CTA*/
+				
+		.btn{
+			background-color: black;
+			color: white;
+			border: none;
+			padding: 15px 32px;
+			font-size: 15px;
+			width: 100%;
+			border-radius: 12px;
+		}
+		
+		.btn:hover{
+			background-color: gray;
+			color: black;
+		}
+		
+		.btn1{
+			background-color: white;
+			color: black;
+			border: none;
+			padding: 15px 32px;
+			font-size: 15px;
+			width: 100%;
+			border-radius: 12px;
+		}
+		
+		.btn1:hover{
+			background-color: gray;
+			color: black;
+		}
+		
+	
+		/*IMAGE HOVER*/
+		
+		
+			img {
+    		filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");   
+   			webkit-filter: grayscale(100%);
+   			moz-filter: grayscale(100%);
+   			ms-filter: grayscale(100%);
+  			filter: grayscale(100%);
+  			filter: gray; 
+		}
+		
+			img:hover {
+   			webkit-filter: none;
+   			moz-filter: none;
+   			ms-filter: none;
+   			filter: none;
+		}
+				
+			#item8 img:hover {
+    		filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");   
+   			webkit-filter: grayscale(100%);
+   			moz-filter: grayscale(100%);
+   			ms-filter: grayscale(100%);
+  			filter: grayscale(100%);
+  			filter: gray; 
+		}
+		
+			#item8 img{
+   			webkit-filter: none;
+   			moz-filter: none;
+   			ms-filter: none;
+   			filter: none;
+		}
+		
+			footer{
+			background-color: grey;
+		}
+		
+		
+		/****media query to change style for phones****/
+			@media (max-width:800px){
+		
+          .flex-container {
+            flex-direction: column;
+          }
+						
+	</style>
+</head>
+
+<body>
+	
+	<header>
+		
+		<div class="flex-container">
+			<div id="item1">
+				<h4>SUP INTERNET! I'M</h4><br>
+				<h1>Claude,</h1>
+			</div>	
+		</div>
+		
+	</header>
+	
+	
+	
+	<div class="flex-container">
+		<div id="item2">"</div>
+	
+		<div id="item3">
+			<h3>About Me</h3>
+			<p align="justify">I'm a freelance graphic and web designer and currently a student at <a href="https://lethbridgecollege.ca" target="_blank">Lethbridge College</a> taking the Multimedia Production Diploma. I has been professionally working for the past 7-years in various industry mainly in sales and marketing with expertise in branding and designing. In 2018, I started to work as a freelance graphic and web designer and currently I hosts websites for my clients. I started as a merchandiser for a sporting brand company and was promoted to a Sales Coordinator where I developed my skills and knowledge on creating and designing contents on different media formats.</p>
+		</div>
+		
+		<div id="item4">		
+			<p><button class="btn" onclick="#">Projects</button></p>
+			<p><button class="btn" onclick="#">Portfolio</button></p>		
+		</div>
+			
+		<div id="item5"></div>
+	</div>
+		
+	
+	<div class="flex-container">
+		<div id="item6">
+			<div id="item6a"></div>
+   			 	<div id="item6b">
+					<p><button class="btn" onclick="#">What I do</button></p>	
+				</div>
+			<div id="item6c">
+					<h2>be more, not less</h2>
+			</div>
+			<div id="item6d"></div>
+		</div>
+	</div>
+	
+	
+	<div class="flex-container">
+		<div id="item7">
+			<img src="images/1.png" alt="taiwan">
+		</div>
+		<div id="item8">
+			<img src="images/2.png" alt="shanghai">
+		</div>
+		<div id="item9">
+			<img src="images/3.png" alt="dubai">
+		</div>
+		<div id="item10">
+			<img src="images/4.png" alt="cebu">
+		</div>
+	</div>
+	
+	
+	<div class="flex-container">
+		<div id="item11"></div>
+		
+		<div id="item12">
+			<p align="justify">I  was  born  and  raised  in  Marikina  City,  Philippines  before  moving  to  <a href="https://www.visitdubai.com/en/things-to-do" target="_blank">Dubai</a>,  United  Arab Emirates  in  2016. I  worked  in  several  industries  such  as  retail,  oil  and  gas  and  logistics before moving to Lethbridge in 2021 to study and pursue my passion in Digital Media. I love taking photos and filming videos whenever I travel. At first, creating and editing contents used to be my hobby, now I want to pursue a career in this same sector.</p>
+		</div>
+			
+		<div id="item13">
+			<img src="images/social.png" alt="socials">
+		</div>
+		
+		<div id="item14"></div>
+		
+	</div>
+	
+	<div class="flex-container">
+		<div id="item15">
+			<div id="item15a">
+				<p align="justify">During  my  stay  in  Dubai,  I  participated  and  volunteered  with  community  churches  to  provide them free design services for signs, tarps, flyers and t-shirts. This was a great way to help the community and practice my craft at the same time. I got my first ever client through word of mouth.</p>
+			</div>
+   			 <div id="item15b"></div>
+			<div id="item15c"></div>
+		</div>
+	</div>
+	
+	
+	<div class="flex-container">
+			<div id="item16">
+				<h2>Let's make something extraordinary!</h2>
+			</div>
+		
+			<div id="item17">
+				<p><button class="btn1" onclick="#">Get in Touch</button></p>
+			</div>
+		
+		<div id="item18"></div>
+	</div>
+	
+	
+	
+	<footer>
+		<div class="flex-container">
+			<div id="item19">
+					<img src="images/logo.png" alt="logo">
+			</div>
+			
+			<div id="item20">
+						<p align="justify">I create and design contents for any media platforms and formats. I do also provide creative visual elements for websites to reflect the company’s branding and design aesthetics. I offer branding strategy, product placement, digital marketing and social media management for successful audience engagement.</p>		
+			</div>
+			
+			<div id="item21">
+					<ul><h3>Useful links</h3>
+						Home<br>
+						Projects<br>
+						What I do<br>
+						Contact<br>
+					</ul>	
+			</div>
+		
+			<div id="item22">
+				<ul><h3>Services</h3>
+						Graphic Design<br>
+						Web Design<br>
+						Contenct Branding<br>
+						Customer Service<br>
+					</ul>
+			</div>
+			
+			<div id="item23">
+						<ul><h3>Resources</h3>
+							Blog<br>
+							FAQ<br>
+							Careers<br>
+							Downloads<br>
+						</ul>
+			</div>
+			
+		</div>
+	
+		
+		<div class="flex-container">
+			<div id="item24">
+					<p>All rights reserved. &copy; 2021 - <a href="https://bedesignlab.com" target="_blank">BE. Design Lab</a></p>
+			</div>
+		</div>
+	</footer>
+	
+</body>
+</html>
