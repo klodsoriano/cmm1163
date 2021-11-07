@@ -1,0 +1,436 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/**My Google Fonts**/
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+body{
+	margin: 0; 
+	padding: 0; 
+	background-color: white;
+	font-family: 'Lusitana', serif;
+	color: black;
+	box-sizing: border-box;
+}
+
+h1{
+	font-family: 'Qahiri', sans-serif;
+	color: white;
+}
+
+h2{
+	font-family: 'Russo One', sans-serif;
+	font-size: 25px;
+}
+
+h3{
+	font-family: 'Russo One', sans-serif;
+	font-size: 80px;
+	color: white;
+}
+
+h4{
+	font-size: 20px;
+}
+
+
+/*-----------------------index header-------------------*/	
+#header{
+	margin: 0;
+	background-image: url("../images/backgrounds/header.jpg");
+	height: 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#header-text{
+	text-align: center;
+	font-size: 100px;
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+}
+
+/*------------------------for CTA -------------------*/	
+#button{
+	text-align: center;
+	position: absolute;
+	top: 65%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.btn{
+	border-radius: 4px;
+  	background-color: transparent;
+  	border: none;
+  	color: #FFFFFF;
+  	text-align: center;
+  	font-size: 25px;
+  	padding: 10px;
+  	width: 100px;
+  	transition: all 0.5s;
+  	cursor: pointer;
+  	margin: 5px;
+}
+
+.btn1{
+	background-color: black;
+	border: none;
+	padding: 10px 30px;
+	font-size: 15px;
+	border-radius: 7px;
+}
+
+.btn1:hover{
+	background-color: blue;
+	border: none;
+	padding: 10px 30px;
+	font-size: 15px;
+	border-radius: 7px;
+}
+
+/*------------------------for index CTA animation -------------------*/		
+.btn span {
+  	cursor: pointer;
+  	display: inline-block;
+  	position: relative;
+  	transition: 0.5s;
+}
+
+.btn span:after {
+  	content: '\00bb';
+  	position: absolute;
+  	opacity: 0;
+  	top: 0;
+  	right: -20px;
+  	transition: 0.5s;
+}
+
+.btn:hover span {
+  	padding-right: 25px;
+	transform: scale(1.5);
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover span:after {
+  	opacity: 1;
+  	right: 0;
+}
+
+
+/*------------------------section body -------------------*/
+.sect{
+	max-width: 100%;
+	text-align: justify;
+}
+
+
+/*------------------------Link for indexpage -------------------*/
+a:link, a:visited{
+	color: white;
+	text-decoration: none;
+}
+
+a:hover, a:active{
+	color:white;	
+}
+
+
+/*------------------------ Links -------------------*/
+.sect a:link, .sect a:visited{
+	color: maroon;
+}
+
+#itemb a:link, #itemb a:visited{
+	color: yellow;
+	 text-decoration: none;
+}
+
+#itemb a:hover{
+	color: yellow;
+}
+
+
+/*------------------------navBar -------------------*/
+nav ul {
+  	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+  	width: 20%;
+  	background-image: url("../images/backgrounds/nav.jpg");
+	background-attachment: fixed;
+  	position: fixed;
+  	height: 100%;
+  	overflow: auto;
+}
+
+nav li a,  nav li a:visited{
+  	display: block;
+  	color: white;
+  	text-align: left;
+  	padding: 25px 40px;
+  	text-decoration: none;
+}
+
+nav li a.active {
+  background-color: white;
+  color: black;
+}
+
+nav li a:hover {
+  	background-color: white;
+	color: black;
+}
+
+/*------------------------RWD Nav-------------------*/
+@media screen and (max-width: 700px) {
+  nav ul {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+	
+  	nav li a {float: left;}
+  	div.flex-container {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  	nav li a {
+    text-align: center;
+    float: none;
+	}
+}
+
+
+/*----------------RWD for mobile-------------------*/
+@media (max-width:800px){
+	.flex-container {
+    flex-direction: column;
+	}     
+}
+
+
+/*----------------------------flex-box-----------------*/
+.flex-container {
+  	height: 100%;
+	margin-left: 20%;
+	display: flex;
+}
+
+.flex-container div{
+	padding: 30px;
+}
+
+#item1{
+	flex: 50%;
+}
+
+#item2{
+	flex: 50%;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#item3{
+	padding-right: 0;
+	height: 50vh;
+	width: 100%;
+	background-image: url("../images/backgrounds/expo.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+}
+
+#item4{
+	padding-right: 0;
+	height: 50vh;
+	width: 100%;
+	background-image: url("../images/backgrounds/ain.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+}
+
+#item5{
+	padding-right: 0;
+	height: 50vh;
+	width: 100%;
+	background-image: url("../images/backgrounds/desert.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+}
+
+#item6{
+	padding-right: 0;
+	height: 50vh;
+	width: 100%;
+	background-image: url("../images/backgrounds/people.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+}
+
+#item7{
+	padding-right: 0;
+	height: 50vh;
+	width: 100%;
+	background-image: url("../images/backgrounds/economy.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+}
+
+#item8{
+	padding-right: 0;
+	height: 50vh;
+	width: 100%;
+	background-image: url("../images/backgrounds/metro.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+}
+
+#itema{
+	flex: 50%;
+	color: white;
+	font-size: 40px;
+}
+
+
+#itemb{
+	flex: 50%;
+	background-color: white;
+	align-self: center;
+}
+
+#itemg{
+	flex: 100%;
+	display: flex;
+	height: 50vh;
+ 	flex-direction: column;
+	background-image: url("../images/backgrounds/frame.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	align-items: center; 
+	justify-content: center;
+}
+
+#itemg1{
+	flex: 100%;
+	display: flex;
+	height: 50vh;
+ 	flex-direction: column;
+	background-image: url("../images/backgrounds/palmview.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	align-items: center; 
+	justify-content: center;
+}
+
+
+#itemg2{
+	flex: 100%;
+	display: flex;
+	height: 50vh;
+ 	flex-direction: column;
+	background-image: url("../images/backgrounds/sands.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	align-items: center; 
+	justify-content: center;
+}
+
+#itemg3{
+	flex: 100%;
+	display: flex;
+	height: 50vh;
+	color: white;
+ 	flex-direction: column;
+	background-image: url("../images/backgrounds/nationalday.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	align-items: center; 
+	justify-content: center;
+	line-height : 0px;	
+}
+
+#itemg4{
+	flex: 100%;
+	display: flex;
+	height: 50vh;
+	color: white;
+ 	flex-direction: column;
+	background-image: url("../images/backgrounds/aldar.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	align-items: center; 
+	justify-content: center;
+	line-height : 0px;	
+}
+
+#itemh{
+	flex: 25%;
+	display: flex;
+	align-items: baseline;
+}
+
+#itemi, #itemj, #itemk{
+	flex: 25%;
+	padding: 0px 0px 50px 0px;
+}
+
+#iteml{
+	flex: 100%;
+	padding: 0;
+	text-align: center;	
+}
+
+
+/*----------------------------image gallery-----------------*/
+
+#itemc, #itemd, #iteme, #itemf{
+	flex: 50%;
+	padding: 0;
+	display: flex;
+}
+		
+#itemc img, #itemd img, #iteme img, #itemf img{
+	width: 100%;
+}
+
+
+/*---------------------------Tables------------------------*/
+
+
+#customers {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: lightskyblue;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: navy;
+  color: white;
+}
+
