@@ -365,7 +365,7 @@ nav li a:hover {
 	background-attachment: fixed;
 	align-items: center; 
 	justify-content: center;
-	line-height : 0px;	
+	text-align: center;
 }
 
 #itemg4{
@@ -379,7 +379,6 @@ nav li a:hover {
 	background-attachment: fixed;
 	align-items: center; 
 	justify-content: center;
-	line-height : 0px;	
 }
 
 #itemh{
