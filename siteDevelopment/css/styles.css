@@ -301,16 +301,20 @@ nav li a:hover {
 }
 
 #itema{
+	padding: 0px 50px 0px 0px;
 	flex: 50%;
 	color: white;
 	font-size: 40px;
+	text-align: left;
 }
 
 
 #itemb{
+	padding-right: 50px;
 	flex: 50%;
 	background-color: white;
 	align-self: center;
+	text-align: left;
 }
 
 #itemg{
