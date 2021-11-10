@@ -301,7 +301,7 @@ nav li a:hover {
 }
 
 #itema{
-	padding: 0px 50px 0px 0px;
+	padding: 0;
 	flex: 50%;
 	color: white;
 	font-size: 40px;
