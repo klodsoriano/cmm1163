@@ -1,0 +1,235 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>madLibs Story</title>
+	
+	
+	<!--MetaViewport tag-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!--link to Google Font-->
+	<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+
+	
+	
+</head>
+
+	<style>
+		
+		body {
+			padding: 0px 200px 100px 200px;
+			background-image: url("images/header.jpeg");
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;	
+			text-align: center;
+		}
+
+		#header{ 
+			height: 60vh;
+			font-family: 'Alfa Slab One', cursive;	
+		}
+	
+		#header-text{
+			text-align: center;
+			font-size: 70px;
+			color: #E300FF;
+			text-shadow: 5px 5px black;
+		}
+		
+		#index{
+			padding: 50px;
+			border: thick dotted black;
+			background-color: white;	
+		}
+		
+		#submit{
+			padding-top: 50px;
+		}
+		
+		.start{
+			border-radius: 4px;
+			background-color: red;
+			border: none;
+			color: #FFFFFF;
+			font-size: 20px;
+			padding: 10px;
+			width: 150px;
+			transition: all 0.5s;
+			cursor: pointer;
+			border-radius: 10px;
+		}
+
+		.start:hover{
+			background-color: orange;
+			border: none;
+			color: black;
+			text-align: center;
+			padding: 20px;
+			font-size: 15px;
+			border-radius: 10px;
+		}
+		
+	</style>
+	
+	
+	
+
+<body>
+	
+	<div id="header">
+		<div id="header-text">
+			<h1>Let's Go MadLibs!</h1>
+		</div>
+	</div>
+
+	<div id="index">
+		
+			<h1>Fill out the below with your most crazy answers!</h1><br>
+		
+	<!-------start of the form-------->
+	<form action="javascript:write();">
+		
+				
+	<!-----------text field----------->
+		<p>
+			<label for="fPlace">Favourite Place:</label>
+				<input type="text" id="fPlace" name="fPlace" autofocus>
+			
+			<label for="pName">Pet Name:</label>
+				<input type="text" id="pName" name="pName">
+			
+			<label for="fColour">Favourite Colour:</label>
+				<input type="text" id="fColour" name="fColour">
+		</p>
+				
+	<!-----------radio buttons--------->	
+		<p>
+			
+			<label for="hobby">What's your hobby:</label>
+			<input type="radio" name="hobby" value="driving">Driving
+			<input type="radio" name="hobby" value="cleaning">Cleaning
+			<input type="radio" name="hobby" value="eating">Eating
+		</p>
+				
+	<!-----------text field----------->
+		<p>
+			<label for="fAcces">Favourite Accessory:</label>
+				<input type="text" id="fAcces" name="fAcces">
+			
+			<label for="BfName">Your bestfriend's Name:</label>
+				<input type="text" id="BfName" name="BfName">
+			
+		</p>	
+				
+	<!-----------drop down----------->			
+				
+		<p>
+			<label for="fHangout">Hangout Place:</label>
+				<select id="fHangout" name="fHangout">
+					<option value="kitchen">Kitchen</option>
+					<option value="mall">Mall</option>
+					<option value="clinic">Clinic</option>
+					<option value="washroom">Washroom</option>
+				</select> 
+		</p>		
+				
+	<!-----------text field----------->
+		<p><br>
+			<p>Your top 3 favourite foods</p>
+			<label for="fFood1"></label>
+				<input type="text" id="fFood1" name="fFood1">
+			
+			<label for="fFood2"></label>
+				<input type="text" id="fFood2" name="fFood2">
+			
+			<label for="fFood3"></label>
+				<input type="text" id="fFood3" name="fFood3">
+		</p>
+			
+		<p>
+			<p>Most hate colour</p>
+			<label for="hColor"></label>
+				<input type="text" id="hColor" name="hColor">
+		</p>
+		
+		<p>
+			<p>Your most valuable item</p>
+			<label for="vThing"></label>
+				<input type="text" id="vThing" name="vThing">
+		</p>	
+		
+			
+
+<br>
+<hr><br>
+	<div id="output"><h3>GO MAD once done and wait for the magic!</h3></div>
+
+
+	
+	
+	<div id="submit">
+		<div>
+			<input class="start" type="submit" value="GO MAD!">
+		</div>
+	</div>
+
+	
+	</form>
+</div>
+	<script>
+	
+	//functions to change content
+	
+		function write(){
+		
+			var favplace = document.getElementById('fPlace').value;
+			var petname = document.getElementById('pName').value;
+			var favcolour = document.getElementById('fColour').value;
+			
+			var hobby = document.querySelector('input[name="hobby"]:checked').value;
+			
+			var hobbyOption;
+			
+			if(hobby=="driving"){
+				hobbyOption=" driving our new car while wearing his favourite ";
+			}else if(hobby=="cleaning"){
+				hobbyOption=" cleaning our backyard while only wearing his ";
+			}else if(hobby=="eating"){
+				hobbyOption=" eating cold ice cream using ";
+			}
+			
+			var favacc = document.getElementById('fAcces').value;
+			var bestfname = document.getElementById('BfName').value;
+			var hangout = document.getElementById('fHangout').value;
+			var favfood1 = document.getElementById('fFood1').value;
+			var favfood2 = document.getElementById('fFood2').value;
+			var favfood3 = document.getElementById('fFood3').value;
+			var hateColour = document.getElementById('hColor').value;
+			var valThing = document.getElementById('vThing').value;
+			
+	//concatenate together strings and variables to create a message
+			
+			document.getElementById('output').innerHTML="<img src='images/beach.jpg' alt='beach'><br><br>";
+			document.getElementById('output').innerHTML+="Our family is having a summer trip to "+ favplace+".";
+			document.getElementById('output').innerHTML+=" It is a 6-hour drive away from our town. It is our first time going out of town. We have our cat with us named  " + petname+".";
+			document.getElementById('output').innerHTML+=" She is a white Persian cat with "+favcolour+" eyes. ";
+			document.getElementById('output').innerHTML+="She is adorable and cute at the same time. My dad is "+hobbyOption+favacc+". ";
+			
+			document.getElementById('output').innerHTML+="We are joined by our family friend "+bestfname+" and Neri. They’ve been our neighbors since I was 12. My mom and Neri are co-workers in the "+hangout+". ";
+			
+			document.getElementById('output').innerHTML+="My parents packed a big cooler full of foods. We have "+favfood1+" "+favfood2+" and "+favfood3+". ";
+			
+			document.getElementById('output').innerHTML+="My brother prepared our family matching "+hateColour+" coloured shirt with a photo of a our cat in front and our family name at the back. ";
+			
+			document.getElementById('output').innerHTML+="My mom forgot to bring a "+valThing+" which we need so we don’t get sunburned. ";
+			
+		}
+	
+	</script>
+
+
+</body>
+</html>
